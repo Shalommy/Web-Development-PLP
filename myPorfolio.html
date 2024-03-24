@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheets" href=" portfolio.css">
+
+    <style>
+        body{background-color: rgb(250, 227, 231);
+           display: inline-flexbox;}
+        header h1{ display:flex;
+            background-color:
+            rgb(232, 91, 115);
+    color:pink;
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+         }
+        ul#menu li {height:50px;
+            list-style-type: none;
+            color:rgb(33, 28, 28);
+            display: inline;
+          justify-content: space-between;
+          align-items:center;
+          padding: 0 20px;
+           font-weight: bold;
+          font-size: x-large;
+          margin:0 20px;
+        }
+         section#gallery{display:grid;
+         grid-template-columns:minmax(2);
+         grid-template-rows: minmax(2);
+        grid-gap:10px}
+        .grid-container{
+            display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+             grid-gap:20px;
+        }
+        .grid-item{ 
+            position: relative;
+        }
+        .overlay-lay{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.7);
+             padding: 10px;
+             border-radius: 5px;
+             z-index: 1;
+        }
+        .grid-item img{
+            display:block;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+
+        }
+        #skills{background-color: rgb(235, 195, 235);}
+        button{ display: block;
+            font-weight: bold;
+            margin: auto;
+            padding: 30px;
+            border-radius: 30px;
+            border-style: none;
+            color: beige;
+            background-color: palevioletred;
+            border-color: rgb(237, 14, 88);
+            box-shadow: 6px 6px 10px;
+        }
+            
+         
+         button:hover {cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            My Portfolio
+        </h1>
+    </header>
+    <br>
+    <ul id="menu">
+        <li><a href= "about">My Bio</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href=" contact">Contact</a></li>
+    </ul>
+    <br>
+    <main>
+        <section id="about">
+            <h2>My Bio</h2>
+            <img src="main-image.jpeg" width="250px" height="300px">
+            <p> Greetings 👋🏽 👋🏻👋🏿 and welcome to my portfolio!<br>
+                My name is Galoome, I am a coding student.
+            </p>
+            <br>
+        </section>
+        <section id="projects">
+            <h2>Projects I have worked on:</h2>  
+             <div class="grid-container">
+              <div class= "grid-item">
+                <div class ="overlay-text">
+                    Website Design
+                </div>
+                <img src ="media-player.jpg" width="300px" height="200px">
+            </div>
+            <div class ="grid=item">
+                <div class ="overlay-text"> Web Management</div>
+                <img src = "website.jpg" width="300px" height="200px">
+            </div>
+            <div class = "grid-item">
+                <div class = "overlay-text">
+                    Social Media Marketing</div>
+                    <img src ="facebook.jpg" width="200px" height="150px">
+                    </div>
+                    <div class ="grid-item">
+                        <div class = "overlay-text">
+                            Social Media Marketing
+                        </div>
+                        <img src ="instagram.jpg" width="200px" height="150px"></div>
+                </div>
+
+        </section>
+             <br>
+        <section id="skills">
+            <h2>My skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>CSS</li> 
+            </ul>
+            <br>
+            <section id="contact">
+                 <h2>Get in touch with me!</h2>
+                <button>
+                    <a href ="mailto:galoomeshopane@gmail.com">Contact me
+                    </a>
+                    </button>
+              
+                </section>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024.</p>
+    </footer>
+</body>
+</html>
